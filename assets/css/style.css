@@ -1,0 +1,86 @@
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+.my_image {
+  height: auto;
+  width: 120px;
+  border-radius: 50%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.background {
+  background: #6e6161;
+}
+
+main,
+footer {
+  padding-left: 320px;
+}
+
+@media only screen and (max-width: 992px) {
+  header,
+  main,
+  footer {
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+
+h3 {
+  font-family: serif;
+  text-decoration: underline;
+  color: #303f9f indigo darken-2;
+  text-align: center;
+}
+
+.interest {
+  max-width: 100%;
+  height: auto;
+  max-height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+h5 {
+  font-family: serif;
+  letter-spacing: 2;
+  text-align: center;
+}
+
+#link {
+  color: black;
+}
+
+nav-mobile.a {
+  padding-left: 20px;
+}
+
+.repo-language-color {
+  -webkit-filter: brightness(125%) !important;
+          filter: brightness(125%) !important;
+  border-radius: 50%;
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  top: 2px;
+  width: 12px;
+}
+/*# sourceMappingURL=style.css.map */

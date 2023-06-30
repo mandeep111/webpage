@@ -298,27 +298,24 @@
         </div>
         </div>
         <div class="divider"></div>
-        <div class="footer-copyright center">
-
-            © 2020 Copyright
-
+        <div class="footer-copyright center" id="footerText">
         </div>
     </div>
     </main>
 </body>
 <script>
-    // $(document).ready(function() {
-    //     $('.sidenav').sidenav().on('click tap', 'li a', () => {
-    //         $('.sidenav').sidenav('close');
+        $(document).ready(function(){
+                $('.sidenav').sidenav();
+                const currentYear = new Date().getFullYear();
+                const footerYearElement = document.getElementById("footerText");
+                footerYearElement.textContent = `© ${currentYear} Copyright`;
 
-    // });
-    $(document).ready(function(){
-    $('.sidenav')
-        .sidenav()
-        .on('click tap', 'li a', () => {
-            $('.sidenav').sidenav('close');
-        });
-});
+            });
+
+        // $('#nav-mobile')
+        // .on('click tap', 'li a', () => {
+        //     $('.sidenav-close').sidenav('close');
+        // });
 </script>
 
 </html>
